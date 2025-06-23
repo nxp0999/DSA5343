@@ -1,9 +1,9 @@
 # DSA5343
 Collection of programs written in Java submitted as assignments for a graduate class in Data Structures and Algorithms
 
-# AVL Tree Implementation (Fixed Version)
+# AVL Tree Implementation
 
-A corrected Java implementation of an AVL (Adelson-Velsky and Landis) Tree - a self-balancing binary search tree where the heights of the two child subtrees of any node differ by at most one.
+A Java implementation of an AVL (Adelson-Velsky and Landis) Tree - a self-balancing binary search tree where the heights of the two child subtrees of any node differ by at most one.
 
 ## Features
 
@@ -17,14 +17,6 @@ A corrected Java implementation of an AVL (Adelson-Velsky and Landis) Tree - a s
   - Right Zigzag (RL rotation)
 - **Tree Visualization**: Methods to display tree structure and perform inorder traversal
 - **Robust Implementation**: Fixed root tracking and edge case handling
-
-## Fixes Applied
-
-✅ **Root Return Logic**: Fixed `insertAVL` to return the actual tree root after rotations  
-✅ **Equal Height Handling**: Added deterministic tie-breaking (prefers left child)  
-✅ **Root Tracking**: Improved root management during insertions and rotations  
-✅ **Null Safety**: Added null checks in `updateHeight` method  
-✅ **Enhanced Output**: Added tree visualization and detailed insertion demo  
 
 ## Operations Supported
 
@@ -185,28 +177,6 @@ Tree structure:
     /         \
    n3          n2
    ```
-
-## Compilation and Algorithm Verification
-
-✅ **COMPILATION STATUS: SUCCESSFUL**
-- All Java syntax is correct
-- No compilation errors
-- All method signatures are valid
-- Proper use of static inner classes
-
-✅ **ALGORITHM CORRECTNESS: VERIFIED**
-- Insertion maintains BST property
-- AVL balance is preserved after each insertion
-- All four rotation cases are handled correctly
-- Height updates are performed after rotations
-- Root tracking is accurate
-
-✅ **EDGE CASES HANDLED:**
-- Empty tree insertion
-- Single node tree
-- Equal height scenarios in balancing
-- Root changes during rotations
-- Parent pointer maintenance
 
 ## Testing Notes
 
